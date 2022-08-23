@@ -2,6 +2,15 @@ import React from 'react';
 import clsx from 'clsx';
 import * as BsIcons from 'react-icons/bs';
 import { useTheme } from 'next-themes';
+import { motion } from 'framer-motion';
+import ToggleButtonTooltip from './ToggleButtonTooltip';
+
+const spring = {
+  type: 'spring',
+  stiffness: 700,
+  damping: 30,
+  duration: 2,
+};
 
 const ToggleButton: React.FC = () => {
   const { theme, setTheme } = useTheme();
@@ -19,16 +28,29 @@ const ToggleButton: React.FC = () => {
   return (
     <button
       onClick={handleToggle}
-      className='p-1 w-16 rounded-full bg-gray-400 dark:bg-gray-200  relative '
+      className={clsx(
+        'group p-1 w-16 rounded-full bg-amber-200 dark:bg-indigo-200  relative  flex border-[1px] shadow-md',
+        theme === 'light'
+          ? 'justify-start border-amber-400'
+          : 'justify-end border-indigo-400'
+      )}
     >
-      <span
+      {/* <div className='hidden group-hover:block   '>
+        <ToggleButtonTooltip theme={theme} />
+      </div> */}
+
+      <motion.div
+        layout
+        transition={spring}
         className={clsx(
-          ' block  bg-gray-200 dark:bg-gray-400 p-1 rounded-full w-max text-md text-amber-500 dark:text-gray-600 transition-all transform duration-400 ease',
-          theme == 'light' ? ' translate-x-[130%]' : 'translate-x-0'
+          ' h-6 w-6 p-1 flex items-center justify-center rounded-full',
+          theme === 'light'
+            ? 'bg-amber-600/50 text-orange-900'
+            : 'bg-indigo-600/50 text-indigo-900'
         )}
       >
         {theme == 'light' ? <BsIcons.BsSun /> : <BsIcons.BsMoonStars />}
-      </span>
+      </motion.div>
     </button>
   );
 };
