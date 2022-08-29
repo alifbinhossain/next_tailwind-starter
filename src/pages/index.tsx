@@ -1,4 +1,4 @@
-import ToggleButton from '@components/shared/Buttons/toggleButton';
+import ToggleButton from '@components/shared/Buttons/ToggleButton';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
@@ -13,9 +13,9 @@ const images = [
 
 export default function Home() {
   return (
-    <div className=' h-screen w-screen bg-gray-50 transition-all duration-300  dark:bg-gray-900 overflow-hidden'>
+    <div className='mn-h-screen lg:h-screen w-screen bg-gray-50 transition-all duration-300  dark:bg-gray-900 overflow-hidden px-8'>
       <div className='container h-full py-8'>
-        <div className=' w-max ml-auto'>
+        <div className=' mb-6 w-max ml-auto'>
           <ToggleButton />
         </div>
 
@@ -24,36 +24,58 @@ export default function Home() {
             <motion.div
               initial={{
                 opacity: 0,
+                y: 20,
               }}
               animate={{
                 opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.5,
+                delay: 1,
+                ease: 'easeIn',
               }}
             >
-              <h1 className='text-5xl text-gray-600 dark:text-gray-200 '>
+              <h1 className='text-3xl lg:text-5xl text-gray-600 dark:text-gray-200 '>
                 Next JS Starter
               </h1>
             </motion.div>
 
-            <h2 className='text-xl mt-4 text-orange-600 dark:text-orange-500 leading-relaxed'>
+            <motion.h2
+              initial={{
+                y: 20,
+                opacity: 0,
+              }}
+              animate={{
+                y: 0,
+                opacity: 1,
+              }}
+              transition={{
+                duration: 0.5,
+                delay: 1.5,
+                ease: 'easeIn',
+              }}
+              className='text-base lg:text-xl mt-4 text-orange-600 dark:text-orange-500 leading-relaxed'
+            >
               With <br /> TypeScript, TailwindCSS, Framer Motion, Redux Toolkit
               & Dark Mode
-            </h2>
+            </motion.h2>
 
-            <div className='mt-8 grid grid-cols-3 gap-6'>
-              {images.map((el) => (
+            <div className='mt-8 grid grid-cols-2 lg:grid-cols-3 gap-6'>
+              {images.map((el, i) => (
                 <motion.div
                   initial={{
                     opacity: 0,
-                    y: 100,
+                    scale: 0.75,
                   }}
                   animate={{
                     opacity: 1,
-                    y: 0,
+                    scale: [0.5, 1.25, 0.75, 1],
                   }}
                   transition={{
                     type: 'spring',
-                    delay: 0.25,
-                    duration: 1,
+                    delay: i * 0.3,
+                    duration: 0.6,
                   }}
                   key={el.id}
                   className=' p-6 border-2 border-gray-400 rounded-md flex items-center justify-center bg-gradient-to-r from-gray-200 to-gray-300'
