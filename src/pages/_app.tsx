@@ -2,8 +2,8 @@ import Head from 'next/head';
 import '../styles/index.css';
 import Layout from 'src/components/layout/Layout';
 import { Provider } from 'react-redux';
-import { store } from '@services/redux/store/store';
 import { ThemeProvider } from 'next-themes';
+import { store } from '@/services/redux/store/store';
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -16,9 +16,9 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@utils/*": ["src/utils/*"],
-      "@services/*": ["src/services/*"],
-      "@components/*": ["src/components/*"]
+      "@/utils/*": ["src/utils/*"],
+      "@/services/*": ["src/services/*"],
+      "@/components/*": ["src/components/*"]
     }
   },
   "exclude": ["node_modules"],
