@@ -1,4 +1,4 @@
-import ToggleButton from '@components/shared/buttons/ToggleButton';
+import ToggleButton from '@components/shared/buttons/ToggleButton/ToggleButton';
 import { motion } from 'framer-motion';
 import { NextPage } from 'next';
 import Image from 'next/image';

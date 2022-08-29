@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import * as BsIcons from 'react-icons/bs';
 import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
-import ToggleButtonTooltip from './ToggleButtonTooltip';
+import ToggleButtonTooltip from '../ToggleButtonTooltip';
 import { Colors } from './button-type';
 
 const spring = {
