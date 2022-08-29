@@ -1,48 +1,50 @@
-# Next.js TailwindCSS Typescript Redux Toolkit Starter with Dark Mode enabled
+# Next.JS Starter
 
-This is a [Next.js](https://nextjs.org/) 12.x, [TailwindCSS](https://tailwindcss.com/) 3.x, and [TypeScript](https://www.typescriptlang.org/docs/home.html) 4.x starter template
+This is a [Next.js](https://nextjs.org/) 12.x, [TailwindCSS](https://tailwindcss.com/) 3.x, [TypeScript](https://www.typescriptlang.org/docs/home.html) 4.x, , [React-Redux](https://react-redux.js.org/introduction/getting-started) 8.x, [Framer-Motion](https://www.framer.com/docs/) 7.x starter template
 
-For more details, see my blog post. [Nextjs TailwindCSS Typescript Starter](https://dev.to/vuongddang/nextjs-tailwindcss-typescript-starter-1c2m)
+## Tech Stack
 
-## How to use this template
+**Language:** JavaScript, TypeScript
 
-Here're a few ways to create your new project using this template.
+**Framework:** Next.Js, TailwindCSS, Framer-Motion
 
-### Using `create-next-app`
+**State-Management-Libraby:** Redux-Toolkit
 
-Create a new next.js app from the template using [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
+## Screenshots
 
-```
-npx create-next-app --example "https://github.com/vuongddang/nextjs-tailwindcss-typescript-starter/tree/main"
-# or
-yarn create next-app --example "https://github.com/vuongddang/nextjs-tailwindcss-typescript-starter/tree/main"
-```
+![App Screenshot](https://i.ibb.co/k8J6Tfc/Screenshot-2022-08-29-142706.png)
+![App Screenshot](https://i.ibb.co/sP77sVT/Screenshot-2022-08-29-143238.png)
 
-### Create new repository from github [template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
+## Run Locally
 
-You can generate a new repository with the same directory structure and files by click `Use this template` button in the upper right or [click here](https://github.com/vuongddang/nextjs-tailwindcss-typescript-starter/generate).
-
-## Getting Started
-
-Install dependencies:
+Clone the project
 
 ```bash
-npm install
-# or
-yarn install
+  git clone https://github.com/alifbinhossain/next_tailwind-starter.git
 ```
 
-Run the development server:
+Go to the project directory
 
 ```bash
-npm run dev
-# or
-yarn dev
+  cd next_tailwind-starter
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies
 
-You can start editing the page by modifying `src/pages/index.js`. The page auto-updates as you edit the file.
+```bash
+  npm install
+  #or
+  yarn
+
+```
+
+Start the server
+
+```bash
+  npm run dev
+  #or
+  yarn dev
+```
 
 ## Deploy on Vercel
 
@@ -53,3 +55,11 @@ Other option is to click on the button below to create a new repository that loo
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vuongddang/nextjs-tailwindcss-typescript-starter/tree/main)
 
 Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Support
+
+For support, email dev.softenin@gmail.com or join our Slack channel.
+
+## Feedback
+
+If you have any feedback, please reach out to us at dev.softenin@gmail.com
