@@ -8,7 +8,7 @@ This is a [Next.js](https://nextjs.org/) 12.x, [TailwindCSS](https://tailwindcss
 
 **Framework:** Next.Js, TailwindCSS, Framer-Motion
 
-**State-Management-Libraby:** Redux-Toolkit
+**State-Management-Library:** Redux-Toolkit
 
 ## Screenshots
 
