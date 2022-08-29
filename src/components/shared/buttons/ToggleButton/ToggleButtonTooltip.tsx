@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import { Colors } from './ToggleButton/button-type';
+import { Colors } from './button-type';
 
 const ToggleButtonTooltip: React.FC<{
   theme: string;
