@@ -21,3 +21,5 @@ export type Colors =
   | 'fuchsia'
   | 'pink'
   | 'rose';
+
+export type Sizes = 'sm' | 'md' | 'lg';
