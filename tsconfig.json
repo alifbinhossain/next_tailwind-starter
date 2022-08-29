@@ -29,6 +29,7 @@
     "src/**/*.tsx",
     "@types/**/*.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "my-preset.js"
   ]
 }

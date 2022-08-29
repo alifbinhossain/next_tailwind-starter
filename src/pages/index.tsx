@@ -14,10 +14,10 @@ const images = [
 
 const Home: NextPage = () => {
   return (
-    <div className='mn-h-screen lg:h-screen w-screen bg-gray-50 transition-all duration-300  dark:bg-gray-900 overflow-hidden px-8'>
+    <div className='mn-h-screen w-full bg-gray-50 transition-all duration-300  dark:bg-gray-900 overflow-hidden px-8'>
       <div className='container h-full py-8'>
         <div className=' mb-6 w-max ml-auto'>
-          <ToggleButton />
+          <ToggleButton dark='fuchsia' />
         </div>
 
         <div className='h-full flex justify-center'>
