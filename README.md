@@ -10,6 +10,13 @@ This is a [Next.js](https://nextjs.org/) 12.x, [TailwindCSS](https://tailwindcss
 
 **State-Management-Library:** Redux-Toolkit
 
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
 ## Screenshots
 
 ![App Screenshot](https://i.ibb.co/k8J6Tfc/Screenshot-2022-08-29-142706.png)
