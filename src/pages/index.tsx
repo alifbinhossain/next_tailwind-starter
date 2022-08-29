@@ -1,5 +1,6 @@
 import ToggleButton from '@components/shared/buttons/ToggleButton';
 import { motion } from 'framer-motion';
+import { NextPage } from 'next';
 import Image from 'next/image';
 
 const images = [
@@ -11,7 +12,7 @@ const images = [
   { id: 6, src: '/assets/images/dark.svg' },
 ];
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div className='mn-h-screen lg:h-screen w-screen bg-gray-50 transition-all duration-300  dark:bg-gray-900 overflow-hidden px-8'>
       <div className='container h-full py-8'>
@@ -100,4 +101,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;
