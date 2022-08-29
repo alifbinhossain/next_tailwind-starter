@@ -13,7 +13,7 @@ const spring = {
   duration: 2,
 };
 
-// The following props can be passed: light, dark, size, darkIcon & lightIcon
+// The following props can be passed: light, dark, size, tooltip, darkIcon & lightIcon
 // Note: For customizing darkIcons and lightIcons, you should use react-icons
 const ToggleButton: React.FC<{
   light?: Colors;
@@ -21,12 +21,14 @@ const ToggleButton: React.FC<{
   size?: Sizes;
   darkIcon?: React.ReactNode;
   lightIcon?: React.ReactNode;
+  tooltip?: boolean;
 }> = ({
   light = 'amber',
   dark = 'indigo',
   size = 'md',
   lightIcon = <BsIcons.BsSun />,
   darkIcon = <BsIcons.BsMoonStars />,
+  tooltip = false,
 }) => {
   const { theme, setTheme } = useTheme();
   const handleToggle = () => {
@@ -71,15 +73,17 @@ const ToggleButton: React.FC<{
       )}
     >
       {/* Comment this out to enable tooltip  */}
-      {/* <div className='hidden group-hover:block'>
-        <ToggleButtonTooltip theme={theme} dark={dark} light={light} />
-      </div> */}
+      {tooltip && (
+        <div className='hidden group-hover:block'>
+          <ToggleButtonTooltip theme={theme} dark={dark} light={light} />
+        </div>
+      )}
 
       <motion.div
         layout
         transition={spring}
         className={clsx(
-          '  flex items-center justify-center rounded-full shadow-2xl',
+          'flex items-center justify-center rounded-full shadow-2xl',
 
           size === 'sm'
             ? 'h-5 w-5 p-1'

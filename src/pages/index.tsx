@@ -20,10 +20,10 @@ const Home: NextPage = () => {
       <div className='container h-full py-8'>
         <div className=' mb-6 w-max ml-auto'>
           {/*
-          The following props can be passed: light, dark, size, darkIcon & lightIcon 
+          The following props can be passed: light, dark, size, tooltip, darkIcon & lightIcon 
           Note: For customizing darkIcons and lightIcons, you should use react-icons
           */}
-          <ToggleButton />
+          <ToggleButton dark='fuchsia' tooltip />
         </div>
 
         <div className='h-full flex justify-center'>
