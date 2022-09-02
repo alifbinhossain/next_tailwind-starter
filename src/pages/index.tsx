@@ -16,14 +16,14 @@ const images = [
 
 const Home: NextPage = () => {
   return (
-    <div className='mn-h-screen w-full bg-gray-50 transition-all duration-300  dark:bg-gray-900 overflow-hidden px-8'>
+    <div className='min-h-screen w-full bg-gray-50 transition-all duration-300  dark:bg-gray-900 overflow-hidden px-8'>
       <div className='container h-full py-8'>
         <div className=' mb-6 w-max ml-auto'>
           {/*
           The following props can be passed: light, dark, size, tooltip, darkIcon & lightIcon 
           Note: For customizing darkIcons and lightIcons, you should use react-icons
           */}
-          <ToggleButton dark='fuchsia' tooltip />
+          <ToggleButton tooltip />
         </div>
 
         <div className='h-full flex justify-center'>
