@@ -72,7 +72,7 @@ const ToggleButton: React.FC<{
           : `justify-end bg-${dark}-200 border-${dark}-400`
       )}
     >
-      {/* Comment this out to enable tooltip  */}
+      {/* TOOLTIP */}
       {tooltip && (
         <div className='hidden group-hover:block'>
           <ToggleButtonTooltip theme={theme} dark={dark} light={light} />

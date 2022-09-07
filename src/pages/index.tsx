@@ -1,9 +1,9 @@
-import ToggleButton from '@components/shared/buttons/ToggleButton/ToggleButton';
 import { motion } from 'framer-motion';
 import { NextPage } from 'next';
 import Image from 'next/image';
 import { GiNightSleep } from 'react-icons/gi';
 import { FaSun } from 'react-icons/fa';
+import dynamic from 'next/dynamic';
 
 const images = [
   { id: 1, src: '/assets/images/next-js.svg' },
@@ -18,14 +18,6 @@ const Home: NextPage = () => {
   return (
     <div className='min-h-screen w-full bg-gray-50 transition-all duration-300  dark:bg-gray-900 overflow-hidden px-8'>
       <div className='container h-full py-8'>
-        <div className=' mb-6 w-max ml-auto'>
-          {/*
-          The following props can be passed: light, dark, size, tooltip, darkIcon & lightIcon 
-          Note: For customizing darkIcons and lightIcons, you should use react-icons
-          */}
-          <ToggleButton tooltip />
-        </div>
-
         <div className='h-full flex justify-center'>
           <div className=' text-center '>
             <motion.div
