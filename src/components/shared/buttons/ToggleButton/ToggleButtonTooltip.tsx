@@ -1,5 +1,7 @@
-import clsx from 'clsx';
 import React from 'react';
+
+import clsx from 'clsx';
+
 import { Colors } from './button-type';
 
 const ToggleButtonTooltip: React.FC<{
@@ -24,7 +26,7 @@ const ToggleButtonTooltip: React.FC<{
             : `left-2 bg-${dark}-200`
         )}
       ></span>
-      <span className='text-xs block w-max'>
+      <span className="text-xs block w-max">
         {theme === 'light' ? 'Light' : 'Dark'}
       </span>
     </div>

@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
+import React from 'react';
+
 import { NextPage } from 'next';
 import Image from 'next/image';
-import { GiNightSleep } from 'react-icons/gi';
-import { FaSun } from 'react-icons/fa';
-import dynamic from 'next/dynamic';
+
+import { motion } from 'framer-motion';
 
 const images = [
   { id: 1, src: '/assets/images/next-js.svg' },
@@ -16,10 +16,10 @@ const images = [
 
 const Home: NextPage = () => {
   return (
-    <div className='min-h-screen w-full bg-gray-50 transition-all duration-300  dark:bg-gray-900 overflow-hidden px-8'>
-      <div className='container h-full py-8'>
-        <div className='h-full flex justify-center'>
-          <div className=' text-center '>
+    <div className="min-h-screen w-full overflow-hidden bg-gray-50 px-8  transition-all duration-300 dark:bg-gray-900">
+      <div className="container h-full py-8">
+        <div className="flex h-full justify-center">
+          <div className=" text-center ">
             <motion.div
               initial={{
                 opacity: 0,
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                 ease: 'easeIn',
               }}
             >
-              <h1 className='text-3xl lg:text-5xl text-gray-600 dark:text-gray-200 '>
+              <h1 className=" text-3xl text-gray-600  dark:text-gray-200 lg:text-5xl">
                 Next JS Starter
               </h1>
             </motion.div>
@@ -54,13 +54,13 @@ const Home: NextPage = () => {
                 delay: 1.5,
                 ease: 'easeIn',
               }}
-              className='text-base lg:text-xl mt-4 text-orange-600 dark:text-orange-500 leading-relaxed'
+              className="mt-4 text-base leading-relaxed text-orange-600 dark:text-orange-500 lg:text-xl"
             >
               With <br /> TypeScript, TailwindCSS, Framer Motion, Redux Toolkit
               & Dark Mode
             </motion.h2>
 
-            <div className='mt-8 grid grid-cols-2 lg:grid-cols-3 gap-6'>
+            <div className="mt-8 grid grid-cols-2 gap-6 lg:grid-cols-3">
               {images.map((el, i) => (
                 <motion.div
                   initial={{
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
                     duration: 0.6,
                   }}
                   key={el.id}
-                  className=' p-6 border-2 border-gray-400 rounded-md flex items-center justify-center bg-gradient-to-r from-gray-200 to-gray-300'
+                  className=" flex items-center justify-center rounded-md border-2 border-gray-400 bg-gradient-to-r from-gray-200 to-gray-300 p-6"
                 >
                   <motion.div
                     initial={{

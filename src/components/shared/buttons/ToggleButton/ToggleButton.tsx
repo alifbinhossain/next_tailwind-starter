@@ -1,8 +1,10 @@
 import React from 'react';
+
 import clsx from 'clsx';
-import * as BsIcons from 'react-icons/bs';
-import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
+import * as BsIcons from 'react-icons/bs';
+
 import ToggleButtonTooltip from './ToggleButtonTooltip';
 import type { Colors, Sizes } from './button-type';
 
@@ -74,7 +76,7 @@ const ToggleButton: React.FC<{
     >
       {/* TOOLTIP */}
       {tooltip && (
-        <div className='hidden group-hover:block'>
+        <div className="hidden group-hover:block">
           <ToggleButtonTooltip theme={theme} dark={dark} light={light} />
         </div>
       )}
