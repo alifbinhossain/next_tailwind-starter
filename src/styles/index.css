@@ -1,0 +1,59 @@
+@import url('./fonts.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE STYLES */
+@layer base {
+  body {
+    @apply text-base;
+  }
+  h1 {
+  }
+  h2 {
+  }
+  h3 {
+  }
+  h4 {
+  }
+  p {
+  }
+  .p_small {
+  }
+  a {
+  }
+  button {
+  }
+  .bg-style {
+    @apply bg-cover bg-no-repeat bg-center;
+  }
+  .sb {
+    @apply border border-red-500;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: calc(100% - 80px);
+    max-width: 1320px;
+  }
+
+  @media (min-width: 960px) {
+    .container {
+      width: calc(100% - 160px);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      width: calc(100% - 180px);
+    }
+  }
+}
+
+/* CUSTOM COMPONENT STYLES */
+@layer components {
+}
+
+/* CUSTOM UTILITIES STYLES */
+@layer utilities {
+}
